@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calclator</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="container">
+            <table align="center">
+                 <!-- Display -->
+                <tr>
+                    <td colspan="4"><input type="text" id="display" readonly disabled ></td>
+                </tr>
+                 <!--End Display -->
+
+                  <!-- Keys -->
+                <tr>
+                    <th><button onclick="allClear()">ac</button></th>
+                    <th><button onclick="clearOne()">c</button></th>
+                    <th><button onclick="operators(this.innerHTML)">*</button></th>
+                    <th><button onclick="operators(this.innerHTML)">/</button></th>
+                    
+                </tr>
+                <tr>
+                    <th><button onclick="numbers(this.innerHTML)">7</button></th>
+                    <th><button onclick="numbers(this.innerHTML)">8</button></th>
+                    <th><button onclick="numbers(this.innerHTML)">9</button></th>
+                    <th><button onclick="operators(this.innerHTML)">-</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="numbers(this.innerHTML)">4</button></th>
+                    <th><button onclick="numbers(this.innerHTML)">5</button></th>
+                    <th><button onclick="numbers(this.innerHTML)">6</button></th>
+                    <th rowspan="2"><button onclick="operators(this.innerHTML)" style="padding: 25px 7px;">+</button></th>
+                </tr>
+                <tr>
+                    <th><button onclick="numbers(this.innerHTML)">1</button></th>
+                    <th><button onclick="numbers(this.innerHTML)">2</button></th>
+                    <th><button onclick="numbers(this.innerHTML)">3</button></th>
+                </tr>
+              
+                <tr>
+                    <th><button onclick="zero()">0</button></th>
+                    <th><button onclick="dot()" >.</button></th>
+                    <th colspan="2"><button onclick="result()" style="padding: 4px 30px;">=</button></th>
+                </tr>
+                <!--End Keys -->
+              
+            </table>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
